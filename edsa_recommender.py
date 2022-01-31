@@ -59,7 +59,7 @@ def main():
     # -------------------------------------------------------------------
     page_selection = st.sidebar.selectbox("Select Page", page_options)
     if page_selection == "Recommender System":
-        title_list = dl.load_movie_titles('../unsupervised_data/unsupervised_movie_data/movies.csv')
+        title_list = dl.load_movie_titles('../../unsupervised_data/unsupervised_movie_data/movies.csv')
         # Header contents
         st.write('# Movie Recommender Engine')
         st.write('### EXPLORE Data Science Academy Unsupervised Predict')
@@ -131,7 +131,7 @@ def main():
 
         # Most Active
             st.subheader("Most Active Users")
-            train_df = dl.load_dataframe('../unsupervised_data/unsupervised_movie_data/train.csv', index=None)
+            train_df = dl.load_dataframe('../../unsupervised_data/unsupervised_movie_data/train.csv', index=None)
             top_user = st.checkbox('Include top user',value=False)
 
             ## include top user
