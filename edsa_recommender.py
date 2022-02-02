@@ -252,7 +252,7 @@ def main():
     if page_selection == "Information":
         st.sidebar.markdown(open('resources/markdown/introduction/contrib.md').read(), unsafe_allow_html=True)
         st.markdown("<h2 style='text-align: center;'>Team 6 - The Recommenders</h1>", unsafe_allow_html=True)
-        st.image('resources/imgs/banner.jpg',use_column_width=True)
+        st.image('resources/imgs/banner_logo.jpg',use_column_width=True)
         #st.sidebar.markdown(open('resources/markdown/introduction/info.md').read(), unsafe_allow_html=True)
         info_pages = ["Select Option", "General Information"]
         info_page_selection = st.selectbox("", info_pages)
