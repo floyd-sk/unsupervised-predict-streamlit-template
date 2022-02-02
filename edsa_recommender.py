@@ -252,7 +252,7 @@ def main():
     if page_selection == "Information":
         st.sidebar.markdown(open('resources/markdown/introduction/contrib.md').read(), unsafe_allow_html=True)
         st.markdown("<h2 style='text-align: center;'>Team RM4 TheFlixters</h1>", unsafe_allow_html=True)
-        st.image('resources/imgs/banner.png',use_column_width=True)
+        st.image('resources/imgs/banner.jpg',use_column_width=True)
         #st.sidebar.markdown(open('resources/markdown/introduction/info.md').read(), unsafe_allow_html=True)
         info_pages = ["Select Option", "General Information", "Contributors"]
         info_page_selection = st.selectbox("", info_pages)
@@ -297,7 +297,7 @@ def main():
             # Gudani
             st.markdown("<h3 style='text-align: center;'>Nelisiwe Mabanga</h3>", unsafe_allow_html=True)
             st.markdown("<p style='text-align: center;'>Data Journalist | Analyst</p>", unsafe_allow_html=True)
-            st.image('resources/imgs/nelly.jpeg', width=120)
+            st.image('resources/imgs/nelly.jpg', width=120)
             st.markdown("<a href='https://www.linkedin.com/in/nelisiwe-mabanga-8bb409106/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
             st.markdown("<a href='https://github.com/Phiwe-Mabanga' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
@@ -311,7 +311,7 @@ def main():
             # Nhlanhla
             st.markdown("<h3 style='text-align: center;'>Nompilo Nhlabathi</h3>", unsafe_allow_html=True)
             st.markdown("<p style='text-align: center;'>Streamlit App Designer</p>", unsafe_allow_html=True)
-            st.image('resources/imgs/Nompilo.png', width=120)
+            st.image('resources/imgs/Nompilo.jpg', width=120)
             st.markdown("<a href='http://www.linkedin.com/in/nompilo-nhlabathi-2701791b2' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
             st.markdown("<a href='https://github.com/mapilos' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
