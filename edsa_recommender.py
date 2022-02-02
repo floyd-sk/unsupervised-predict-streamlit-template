@@ -121,6 +121,7 @@ def main():
 ###########################################################################################
 
     # ------------- EDA -------------------------------------------
+    st.set_option('deprecation.showPyplotGlobalUse', False)
     if page_selection == "Exploratory Data Analysis":
         #st.sidebar.markdown(open('resources/markdown/eda/eda_info.md').read(), unsafe_allow_html=True)
 
