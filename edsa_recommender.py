@@ -48,7 +48,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Introduction", "Exploratory Data Analysis", "Recommender System", "Solution Overview"]
+    page_options = ["Information", "Exploratory Data Analysis", "Recommender System", "Solution Overview", "Developers"]
 
 ###########################################################################################
 ################################ MODEL ####################################################
@@ -59,7 +59,7 @@ def main():
     # -------------------------------------------------------------------
     page_selection = st.sidebar.selectbox("Select Page", page_options)
     if page_selection == "Recommender System":
-        title_list = dl.load_movie_titles('../../unsupervised_data/unsupervised_movie_data/movies.csv')
+        title_list = dl.load_movie_titles('../unsupervised_data/unsupervised_movie_data/movies.csv')
         # Header contents
         st.write('# Movie Recommender Engine')
         st.write('### EXPLORE Data Science Academy Unsupervised Predict')
@@ -131,7 +131,7 @@ def main():
 
         # Most Active
             st.subheader("Most Active Users")
-            train_df = dl.load_dataframe('../../unsupervised_data/unsupervised_movie_data/train.csv', index=None)
+            train_df = dl.load_dataframe('../unsupervised_data/unsupervised_movie_data/train.csv', index=None)
             top_user = st.checkbox('Include top user',value=False)
 
             ## include top user
@@ -249,7 +249,7 @@ def main():
 ################################ Introduction #############################################
 ###########################################################################################
 
-    if page_selection == "Introduction":
+    if page_selection == "Information":
         st.sidebar.markdown(open('resources/markdown/introduction/contrib.md').read(), unsafe_allow_html=True)
         st.markdown("<h2 style='text-align: center;'>Team RM4 TheFlixters</h1>", unsafe_allow_html=True)
         st.image('resources/imgs/banner.png',use_column_width=True)
@@ -274,53 +274,47 @@ def main():
                 st.write(dl.load_dataframe('../unsupervised_data/unsupervised_movie_data/train.csv', index='userId').head(10))
                 st.write(dl.load_dataframe('../unsupervised_data/unsupervised_movie_data/movies.csv',index='movieId').head(10))
 
-        if info_page_selection == "Contributors":
-            st.info("Meet the amazing team members that contributed to this project.")
+        if info_page_selection == "Developers":
+            st.info("Meet the amazing developers that contributed to this project.")
             # st.markdown("<h1 style='text-align: center;'>Contributors</h1>", unsafe_allow_html=True)
             # st.markdown("\n\n")
 
             ### IN ALPHABETICAL ORDER ###
-            # Bulelani
+            # Christinah
             st.markdown("<h3 style='text-align: center;'>Bulelani Nkosi</h3>", unsafe_allow_html=True)
             st.markdown("<p style='text-align: center;'>Streamlit App Coordinator | Data Analyst</p>", unsafe_allow_html=True)
             st.image('resources/imgs/Bulelani.jpg', width=120)
             st.markdown("<a href='https://www.linkedin.com/in/bulelanin' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
             st.markdown("<a href='https://github.com/BNkosi' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Lizette
+            # Floyd
             st.markdown("<h3 style='text-align: center;'>Lizette Loubser</h3>", unsafe_allow_html=True)
             st.markdown("<p style='text-align: center;'>Notebook Coordinator | ML Engineer</p>", unsafe_allow_html=True)
             st.image('resources/imgs/Lizette.jpg', width=120)
             st.markdown("<a href='http://www.linkedin.com/in/lizette-loubser' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
             st.markdown("<a href='https://github.com/Lizette95' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Neli
+            # Gudani
             st.markdown("<h3 style='text-align: center;'>Nelisiwe Mabanga</h3>", unsafe_allow_html=True)
             st.markdown("<p style='text-align: center;'>Data Journalist | Analyst</p>", unsafe_allow_html=True)
             st.image('resources/imgs/nelly.jpeg', width=120)
             st.markdown("<a href='https://www.linkedin.com/in/nelisiwe-mabanga-8bb409106/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
             st.markdown("<a href='https://github.com/Phiwe-Mabanga' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Nolu
+            # Kwenadi
             st.markdown("<h3 style='text-align: center;'>Noluthando Khumalo</h3>", unsafe_allow_html=True)
             st.markdown("<p style='text-align: center;'>Streamlit App Designer</p>", unsafe_allow_html=True)
             st.image('resources/imgs/Thando.jpg', width=120)
             st.markdown("<a href='https://www.linkedin.com/in/noluthando-khumalo-3870ab191/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
             st.markdown("<a href='https://github.com/ThandoKhumalo' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Nompilo
+            # Nhlanhla
             st.markdown("<h3 style='text-align: center;'>Nompilo Nhlabathi</h3>", unsafe_allow_html=True)
             st.markdown("<p style='text-align: center;'>Streamlit App Designer</p>", unsafe_allow_html=True)
             st.image('resources/imgs/Nompilo.png', width=120)
             st.markdown("<a href='http://www.linkedin.com/in/nompilo-nhlabathi-2701791b2' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
             st.markdown("<a href='https://github.com/mapilos' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Sizwe
-            st.markdown("<h3 style='text-align: center;'>Sizwe Bhembe</h3>", unsafe_allow_html=True)
-            st.markdown("<p style='text-align: center;'>Notebook Assistant</p>", unsafe_allow_html=True)
-            st.image('resources/imgs/Sizwe.jpg', width=120)
-            st.markdown("<a href='https://www.linkedin.com/in/sizwe-bhembe-372880101' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-            st.markdown("<a href='https://github.com/sjbhembe' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
