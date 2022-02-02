@@ -114,7 +114,7 @@ def main():
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.markdown(open('resources/markdown/solution.md').read(), unsafe_allow_html=True)
-        st.image('resources/imgs/models.png')
+        st.image('resources/imgs/models.jpg')
 
 ###########################################################################################
 ################################ EDA ######################################################
