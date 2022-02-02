@@ -254,7 +254,7 @@ def main():
         st.markdown("<h2 style='text-align: center;'>Team RM4 TheFlixters</h1>", unsafe_allow_html=True)
         st.image('resources/imgs/banner.jpg',use_column_width=True)
         #st.sidebar.markdown(open('resources/markdown/introduction/info.md').read(), unsafe_allow_html=True)
-        info_pages = ["Select Option", "General Information", "Contributors"]
+        info_pages = ["Select Option", "General Information", "Developers"]
         info_page_selection = st.selectbox("", info_pages)
 
         if info_page_selection == "Select Option":
