@@ -254,7 +254,7 @@ def main():
         st.markdown("<h2 style='text-align: center;'>Team RM4 TheFlixters</h1>", unsafe_allow_html=True)
         st.image('resources/imgs/banner.jpg',use_column_width=True)
         #st.sidebar.markdown(open('resources/markdown/introduction/info.md').read(), unsafe_allow_html=True)
-        info_pages = ["Select Option", "General Information", "Developers"]
+        info_pages = ["Select Option", "General Information"]
         info_page_selection = st.selectbox("", info_pages)
 
         if info_page_selection == "Select Option":
@@ -274,46 +274,46 @@ def main():
                 st.write(dl.load_dataframe('../unsupervised_data/unsupervised_movie_data/train.csv', index='userId').head(10))
                 st.write(dl.load_dataframe('../unsupervised_data/unsupervised_movie_data/movies.csv',index='movieId').head(10))
 
-        if info_page_selection == "Developers":
-            st.info("Meet the amazing developers that contributed to this project.")
-            # st.markdown("<h1 style='text-align: center;'>Contributors</h1>", unsafe_allow_html=True)
-            # st.markdown("\n\n")
+    if page_selection == "Developers":
+        st.info("Meet the amazing developers that contributed to this project.")
+        # st.markdown("<h1 style='text-align: center;'>Contributors</h1>", unsafe_allow_html=True)
+        # st.markdown("\n\n")
 
-            ### IN ALPHABETICAL ORDER ###
-            # Christinah
-            st.markdown("<h3 style='text-align: center;'>Bulelani Nkosi</h3>", unsafe_allow_html=True)
-            st.markdown("<p style='text-align: center;'>Streamlit App Coordinator | Data Analyst</p>", unsafe_allow_html=True)
-            st.image('resources/imgs/Bulelani.jpg', width=120)
-            st.markdown("<a href='https://www.linkedin.com/in/bulelanin' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-            st.markdown("<a href='https://github.com/BNkosi' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        ### IN ALPHABETICAL ORDER ###
+        # Christinah
+        st.markdown("<h3 style='text-align: center;'>Christinah Chokwe</h3>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>Notebook Coordinator | Data Analyst</p>", unsafe_allow_html=True)
+        st.image('resources/imgs/Bulelani.jpg', width=120)
+        st.markdown("<a href='https://www.linkedin.com/in/bulelanin' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/BNkosi' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Floyd
-            st.markdown("<h3 style='text-align: center;'>Lizette Loubser</h3>", unsafe_allow_html=True)
-            st.markdown("<p style='text-align: center;'>Notebook Coordinator | ML Engineer</p>", unsafe_allow_html=True)
-            st.image('resources/imgs/Lizette.jpg', width=120)
-            st.markdown("<a href='http://www.linkedin.com/in/lizette-loubser' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-            st.markdown("<a href='https://github.com/Lizette95' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        # Floyd
+        st.markdown("<h3 style='text-align: center;'>Floyd Skakane</h3>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>Streamlit App Coordinator | ML Engineer</p>", unsafe_allow_html=True)
+        st.image('resources/imgs/Lizette.jpg', width=120)
+        st.markdown("<a href='http://www.linkedin.com/in/lizette-loubser' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/Lizette95' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Gudani
-            st.markdown("<h3 style='text-align: center;'>Nelisiwe Mabanga</h3>", unsafe_allow_html=True)
-            st.markdown("<p style='text-align: center;'>Data Journalist | Analyst</p>", unsafe_allow_html=True)
-            st.image('resources/imgs/nelly.jpg', width=120)
-            st.markdown("<a href='https://www.linkedin.com/in/nelisiwe-mabanga-8bb409106/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-            st.markdown("<a href='https://github.com/Phiwe-Mabanga' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        # Gudani
+        st.markdown("<h3 style='text-align: center;'>Gudani Mbedzi</h3>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>Data Journalist | Analyst</p>", unsafe_allow_html=True)
+        st.image('resources/imgs/nelly.jpg', width=120)
+        st.markdown("<a href='https://www.linkedin.com/in/nelisiwe-mabanga-8bb409106/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/Phiwe-Mabanga' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Kwenadi
-            st.markdown("<h3 style='text-align: center;'>Noluthando Khumalo</h3>", unsafe_allow_html=True)
-            st.markdown("<p style='text-align: center;'>Streamlit App Designer</p>", unsafe_allow_html=True)
-            st.image('resources/imgs/Thando.jpg', width=120)
-            st.markdown("<a href='https://www.linkedin.com/in/noluthando-khumalo-3870ab191/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-            st.markdown("<a href='https://github.com/ThandoKhumalo' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        # Kwenadi
+        st.markdown("<h3 style='text-align: center;'>Kwenadi Letsoalo</h3>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>Streamlit App Designer</p>", unsafe_allow_html=True)
+        st.image('resources/imgs/Thando.jpg', width=120)
+        st.markdown("<a href='https://www.linkedin.com/in/noluthando-khumalo-3870ab191/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/ThandoKhumalo' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
-            # Nhlanhla
-            st.markdown("<h3 style='text-align: center;'>Nompilo Nhlabathi</h3>", unsafe_allow_html=True)
-            st.markdown("<p style='text-align: center;'>Streamlit App Designer</p>", unsafe_allow_html=True)
-            st.image('resources/imgs/Nompilo.jpg', width=120)
-            st.markdown("<a href='http://www.linkedin.com/in/nompilo-nhlabathi-2701791b2' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-            st.markdown("<a href='https://github.com/mapilos' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        # Nhlanhla
+        st.markdown("<h3 style='text-align: center;'>Nhlanhla Hlewane</h3>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>Data Engineer</p>", unsafe_allow_html=True)
+        st.image('resources/imgs/Nompilo.jpg', width=120)
+        st.markdown("<a href='http://www.linkedin.com/in/nompilo-nhlabathi-2701791b2' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/mapilos' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
 
     # You may want to add more sections here for aspects such as an EDA,
