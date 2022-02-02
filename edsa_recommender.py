@@ -290,9 +290,9 @@ def main():
         # Floyd
         st.markdown("<h3 style='text-align: center;'>Floyd Skakane</h3>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>Streamlit App Coordinator | Data Analyst</p>", unsafe_allow_html=True)
-        st.image('resources/imgs/Lizette.jpg', width=120)
-        st.markdown("<a href='http://www.linkedin.com/in/lizette-loubser' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-        st.markdown("<a href='https://github.com/Lizette95' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        st.image('resources/imgs/Floyd.jpg', width=120)
+        st.markdown("<a href='http://www.linkedin.com/in/floyd-skakane-0179a597/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/floyd-sk' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
         # Gudani
         st.markdown("<h3 style='text-align: center;'>Gudani Mbedzi</h3>", unsafe_allow_html=True)
