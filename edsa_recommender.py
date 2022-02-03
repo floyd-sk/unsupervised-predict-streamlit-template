@@ -178,7 +178,7 @@ def main():
             counts = st.number_input('Choose min ratings', min_value=0, max_value=15000, value = 10000, step=1000)
             ns= st.number_input('Choose n movies', min_value=5, max_value=20, value=10,step=5)
             st.subheader('Best and Worst Movies by Genre')
-            eda.plot_ratings(count=counts, n=ns, color='#4D17A0', best=True, method='mean')
+            eda.plot_ratings(count=counts, n=ns, best=True, method='mean')
             #plt.tight_layout()
             st.pyplot()
             st.write('By filtering movies with less than 10000 ratings, we find that the most popular movies are unsurprising titles. The Shawshank Redemption and The Godfather unsurprisingly top the list. What is interesting is that Movies made post 2000 do not feature often. Do users have a preference to Older movies?')
