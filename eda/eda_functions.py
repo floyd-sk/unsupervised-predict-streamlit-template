@@ -88,7 +88,7 @@ def mean_ratings_scatter(df, color='#4DA017', column='userId'):
     plt.ylabel('Number of Ratings')
     plt.show()
 
-def plot_ratings(count, n, best=True, method='mean'):
+def plot_ratings(count, n, color='#4DA017', best=True, method='mean'):
     """
     docstring
     """
