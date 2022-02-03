@@ -79,9 +79,9 @@ def content_model(movie_list,top_n=10):
 
     """
     # Initializing the empty list of recommended movies
-    recommended_movies = []
+    #recommended_movies = []
     # Initializing the empty list of recommended movies
-    data = data_preprocessing(40000) ## CHANGE SUBSET TO MATCH RANGE IN APP
+    data = data_preprocessing(27000) ## CHANGE SUBSET TO MATCH RANGE IN APP
     # Instantiating and generating the count matrix
     count_vec = CountVectorizer()
     count_matrix = count_vec.fit_transform(data['keyWords'])

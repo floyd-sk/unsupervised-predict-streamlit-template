@@ -111,7 +111,7 @@ def plot_ratings(count, n, color='#4DA017', best=True, method='mean'):
         plot = data.tail(n).sort_values('rating', ascending=False)
         title='Worst Rated'
     plt.figure(figsize=(6,5))
-    sns.scatterplot(x=plot['rating'], y=plot['title'], size=plot['count'], color=color)
+    sns.scatterplot(x=plot['rating'], y=plot['title'], size=plot['count'])
     plt.xlabel('Rating')
     plt.ylabel('')
     plt.tick_params(axis='y', which='both', labelleft=False, labelright=True)
