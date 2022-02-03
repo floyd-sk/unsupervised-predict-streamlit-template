@@ -1,8 +1,8 @@
 #### Contents
 
-1. Most active users
-2. Ratings distribution
-3. Ratings trends
+1. Highly active users
+2. Distributions of Ratings
+3. How ratings trend
 
 #### Tooltip:
 

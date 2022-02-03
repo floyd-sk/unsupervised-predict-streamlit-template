@@ -42,7 +42,7 @@ def user_ratings_count(df, n): # N can be played with and  included as an app?
     """
     plt.figure(figsize=(8,6))
     data = df['userId'].value_counts().head(n)
-    ax = sns.barplot(x = data.index, y = data, order= data.index, palette='brg', edgecolor="black")
+    ax = sns.barplot(x = data.index, y = data, order= data.index)
     for p in ax.patches:
         ax.text(p.get_x() + p.get_width()/2., p.get_height(), '%d' % int(p.get_height()), fontsize=11, ha='center', va='bottom')
     plt.title(f'Top {n} Users by Number of Ratings', fontsize=14)
@@ -57,7 +57,7 @@ def ratings_distplot(df, column='rating'):
     docstring
     """
     plt.figure(figsize=(8,6))
-    ax = sns.distplot(df[f'{column}'],bins=10, kde=False, hist_kws=dict(alpha=0.6),color="#4DA017")
+    ax = sns.distplot(df[f'{column}'],bins=10, kde=False, hist_kws=dict(alpha=0.6))
     mean = df[f'{column}'].mean()
     median = df[f'{column}'].median()
     plt.axvline(x=mean, label = f'mean {round(mean,2)}' , color='#FF0029', lw=3, ls = '--')
@@ -70,7 +70,7 @@ def ratings_distplot(df, column='rating'):
     plt.legend()
     plt.show()
 
-def mean_ratings_scatter(df, color='#4DA017', column='userId'):
+def mean_ratings_scatter(df, column='userId'):
     """
     Describe function here
     Parameters
@@ -88,7 +88,7 @@ def mean_ratings_scatter(df, color='#4DA017', column='userId'):
     plt.ylabel('Number of Ratings')
     plt.show()
 
-def plot_ratings(count, n, color='#4DA017', best=True, method='mean'):
+def plot_ratings(count, n, best=True, method='mean'):
     """
     docstring
     """
@@ -130,7 +130,7 @@ def number_users_per_rating(df1 = train_df):
     """
     movieRatingDistGroup = df1['rating'].value_counts().sort_index().reset_index()
     fig, ax = plt.subplots(figsize=(10,6))
-    sns.barplot(data=movieRatingDistGroup, x='index', y='rating', palette="brg", edgecolor="black", ax=ax)
+    sns.barplot(data=movieRatingDistGroup, x='index', y='rating', ax=ax)
     ax.set_xlabel("Rating")
     ax.set_ylabel('Number of Users')
     ax.set_yticklabels(['{:,}'.format(int(x)) for x in ax.get_yticks().tolist()])
@@ -206,7 +206,7 @@ def feature_count(df, column):
     -------
     """
     plt.figure(figsize=(10,6))
-    ax = sns.barplot(y = df[f'{column}'], x = df['count'], palette='brg', orient='h')
+    ax = sns.barplot(y = df[f'{column}'], x = df['count'])
     plt.title(f'Number of Movies Per {column[:-1]}', fontsize=14)
     plt.ylabel(f'{column}')
     plt.xlabel('Count')
@@ -259,7 +259,7 @@ def genre_popularity(df):
     mean = plot_data['mean_rating'].mean()
     min_ = plot_data['mean_rating'].min()
     max_ = plot_data['mean_rating'].max()
-    sns.barplot(y = plot_data['genres'], x = plot_data['mean_rating'], order = plot_data['genres'], orient='h',palette='brg')
+    sns.barplot(y = plot_data['genres'], x = plot_data['mean_rating'], order = plot_data['genres'])
     plt.axvline(x=mean, label = f'mean {round(mean,1)}' , color='black', lw=1, ls ='--')
     plt.axvline(x=min_, label = f'min {round(min_,1)}' , color='#4D17A0', lw=1, ls = '--')
     plt.axvline(x=max_, label = f'max {max_}' , color='#4DA017', lw=1,ls = '--')
@@ -318,7 +318,7 @@ def feat_popularity(df, title = 'feat'):
     mean = plot_data['mean_rating'].mean()
     min_ = plot_data['mean_rating'].min()
     max_ = round(plot_data['mean_rating'].max(),2)
-    sns.barplot(y = plot_data.index, x = plot_data['mean_rating'], order = plot_data.index, orient='h',palette='brg')
+    sns.barplot(y = plot_data.index, x = plot_data['mean_rating'], order = plot_data.index)
     plt.axvline(x=mean, label = f'mean {round(mean,1)}' , color='black', lw=1, ls ='--')
     plt.axvline(x=min_, label = f'min {round(min_,1)}' , color='#4D17A0', lw=1, ls = '--')
     plt.axvline(x=max_, label = f'max {max_}' , color='#4DA017', lw=1,ls = '--')
@@ -328,7 +328,7 @@ def feat_popularity(df, title = 'feat'):
     plt.legend(loc='lower center')
     plt.show()
 
-def plot_ratings(count, n=10, color='#4DA017', best=True, method='mean'):
+def plot_ratings(count, n=10, best=True, method='mean'):
     """
     docstring
     """
@@ -401,7 +401,7 @@ def genre_frequency(df):
 
 def genre_count(df):
     plt.figure(figsize=(10,6))
-    ax = sns.barplot(y = df['genre'], x = df['count'], palette='brg', orient='h')
+    ax = sns.barplot(y = df['genre'], x = df['count'])
     plt.title(f'Number of Movies Per Genre', fontsize=14)
     plt.ylabel('Genre')
     plt.xlabel('Count')

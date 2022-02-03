@@ -1,10 +1,8 @@
 **Problem Statement**
 
-Build a movie recommendation web app based on content and collaborative filtering, capable of accurately predicting movies a user might like based on their preferences.
+To build a recommendation algorithm based on content or collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed, based on their historical preferences.
 
-**Problem Landscape**
-
-In today's technology driven world, recommender systems are critical to ensuring users can make appropriate decisions about the content they engage with daily. Recommender systems help users select similar items when something is being chosen online. Netflix or Amazon would suggest different movies and titles that might interest individual users. In education, these systems may be used to suggest learning material that could improve educational outcomes. These types of algorithms lead to service improvement and customer satisfaction. Current recommendation systems - content-based filtering and collaborative filtering - use difference information sources to make recommendations.
+This model will enable our comapny to give users personalized recommendations leading to customer satisfaction
 
 **Data Overview**
 
