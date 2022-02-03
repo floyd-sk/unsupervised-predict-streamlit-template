@@ -1,8 +1,8 @@
 #### Genres
 
-1. Genre distribution
+1. Distributions of the feature Genre
 2. Most popular Genres
 
-#### Tooltips
+#### Tools
 
 1. Choose subpage with selectbox at the top of the page.

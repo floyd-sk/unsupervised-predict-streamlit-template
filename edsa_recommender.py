@@ -125,13 +125,13 @@ def main():
     if page_selection == "Exploratory Data Analysis":
         #st.sidebar.markdown(open('resources/markdown/eda/eda_info.md').read(), unsafe_allow_html=True)
 
-        page_options_eda = ["User Interactions", "Movies", "Genres", "Directors"]
+        page_options_eda = ["User Interactions", "Movies", "Genres"]
         page_selection_eda = st.selectbox("Select Feature", page_options_eda)
         if page_selection_eda == "User Interactions":
             st.sidebar.markdown(open('resources/markdown/eda/userint.md').read(), unsafe_allow_html=True)
 
         # Most Active
-            st.subheader("Most Active Users")
+            st.subheader("Highly Active Users")
             train_df = dl.load_dataframe('../unsupervised_data/unsupervised_movie_data/train.csv', index=None)
             top_user = st.checkbox('Include top user',value=False)
 
@@ -149,7 +149,7 @@ def main():
             plt.tight_layout()
             st.pyplot()
 
-            st.write("User 72315 has rated an extreme number of movies relative to other users. For EDA purposes, this user can be removed above to make interpretation easier.")
+            st.write("User 72315 has rated a very large number of movies relative to other users. For the purposes of EDA, we can exclude this user to make interpretation easier.")
 
         # Ratings Distribution
             st.subheader('Ratings Distribution')
@@ -188,7 +188,7 @@ def main():
             st.pyplot()
             st.write('Obviously, users did not like Battlefield too much and with 1200 ratings, they really wanted it to be known. It is interesting how many sequels appear in the list')
 
-
+        """
         if page_selection_eda == "Directors":
             st.sidebar.markdown(open('resources/markdown/eda/directors.md').read(), unsafe_allow_html=True)
             imdb_df = dl.load_dataframe('../unsupervised_data/unsupervised_movie_data/imdb_data.csv', index=None)
@@ -225,7 +225,8 @@ def main():
 
         # if page_selection_eda == "Plot Keywords":
         #     st.write('best and worst plots, word clouds')
-
+        """
+        
         if page_selection_eda == "Genres":
             st.sidebar.markdown(open('resources/markdown/eda/genres.md').read(), unsafe_allow_html=True)
             st.subheader('Genre Distribution')
@@ -262,7 +263,7 @@ def main():
             st.info("Welcome! Select an option from the menu above to get started.")
 
         if info_page_selection == "General Information":
-            st.info("Read more about the project and the data that was used to solve the problem at hand.")
+            st.info("Engage with the project and the data that was used to come up with a solution to this problem.")
             #st.sidebar.markdown(open('resources/markdown/introduction/general_information/gen_conts.md').read(), unsafe_allow_html=True)
             st.markdown(open('resources/markdown/introduction/general_information/intro.md').read(), unsafe_allow_html=True)
 
