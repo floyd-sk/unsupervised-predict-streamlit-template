@@ -114,7 +114,7 @@ def main():
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.markdown(open('resources/markdown/solution.md').read(), unsafe_allow_html=True)
-        st.image('resources/imgs/models.jpg')
+        st.image('resources/imgs/models.png')
 
 ###########################################################################################
 ################################ EDA ######################################################
@@ -307,7 +307,7 @@ def main():
         st.markdown("<p style='text-align: center;'>Streamlit App Designer | Data Scientist</p>", unsafe_allow_html=True)
         st.image('resources/imgs/Kwenadi.jpeg', width=120)
         st.markdown("<a href='https://www.linkedin.com/in/kwenadi-l-821510215' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-        st.markdown("<a href='https://github.com/' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/marth418' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
         # Nhlanhla
         st.markdown("<h3 style='text-align: center;'>Nhlanhla Hlewane</h3>", unsafe_allow_html=True)

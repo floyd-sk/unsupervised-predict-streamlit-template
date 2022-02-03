@@ -1,13 +1,13 @@
 ### Page Descriptions
 
 
-**Information** - Read about the project and its amazing contributors.  
+**Information** - Read general information about the project
 
-**Exploratory Data Analysis** - Explore and draw insights from movie data.  
+**Exploratory Data Analysis** - Explore and draw insights from movie data
 
-**Recommender System** - Choose a recommender model to predict some movies that you may like.  
+**Recommender System** - Choose a recommender model to predict top 10 movies that you might like
 
-**Solution Overview** - Read a short discussion of our best performing model. 
+**Solution Overview** - Read a short conclusion of our model performance and 
 
 **Developers** - Information about developers of this ML App 
 
