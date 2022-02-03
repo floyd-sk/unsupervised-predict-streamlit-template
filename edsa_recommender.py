@@ -160,7 +160,7 @@ def main():
 
         # Rating v number of ratings
             st.subheader('Ratings trends')
-            eda.mean_ratings_scatter(ratings, color ='#4D17A0')
+            eda.mean_ratings_scatter(ratings)
             plt.title('Mean user ratings by number of ratings given')
             plt.tight_layout()
             st.pyplot()
