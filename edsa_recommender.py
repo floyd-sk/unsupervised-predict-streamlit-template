@@ -160,7 +160,7 @@ def main():
 
         # Rating v number of ratings
             st.subheader('Ratings trends')
-            eda.mean_ratings_scatter(ratings)
+            eda.mean_ratings_scatter(ratings, color ='#4D17A0')
             plt.title('Mean user ratings by number of ratings given')
             plt.tight_layout()
             st.pyplot()
@@ -313,7 +313,7 @@ def main():
         # Nhlanhla
         st.markdown("<h3 style='text-align: center;'>Nhlanhla Hlewane</h3>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>Feature Engineering | Data Engineer</p>", unsafe_allow_html=True)
-        st.image('resources/imgs/Nompilo.jpg', width=120)
+        st.image('resources/imgs/Nhlanhla_.jpg', width=120)
         st.markdown("<a href='http://www.linkedin.com/in/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
         st.markdown("<a href='https://github.com/' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 

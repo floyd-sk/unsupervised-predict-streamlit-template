@@ -70,7 +70,7 @@ def ratings_distplot(df, column='rating'):
     plt.legend()
     plt.show()
 
-def mean_ratings_scatter(df, column='userId'):
+def mean_ratings_scatter(df, color='#4DA017', column='userId):
     """
     Describe function here
     Parameters
