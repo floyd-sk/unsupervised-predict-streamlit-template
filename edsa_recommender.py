@@ -313,9 +313,9 @@ def main():
         # Nhlanhla
         st.markdown("<h3 style='text-align: center;'>Nhlanhla Hlewane</h3>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>Feature Engineering | Data Engineer</p>", unsafe_allow_html=True)
-        st.image('resources/imgs/Nhlanhla_.jpg', width=120)
-        st.markdown("<a href='http://www.linkedin.com/in/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-        st.markdown("<a href='https://github.com/' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        st.image('resources/imgs/Nhlanhla.jpg', width=120)
+        st.markdown("<a href='http://www.linkedin.com/in/mahhembe' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/nhlanhla-patrick-hlewane-89a9481a3' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
 
     # You may want to add more sections here for aspects such as an EDA,
