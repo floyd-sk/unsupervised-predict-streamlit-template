@@ -284,9 +284,9 @@ def main():
         # Christinah
         st.markdown("<h3 style='text-align: center;'>Christinah Chokwe</h3>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>Notebook Coordinator | Data Analyst</p>", unsafe_allow_html=True)
-        st.image('resources/imgs/Bulelani.jpg', width=120)
-        st.markdown("<a href='https://www.linkedin.com/in/bulelanin' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-        st.markdown("<a href='https://github.com/BNkosi' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        st.image('resources/imgs/Christinah.jpg', width=120)
+        st.markdown("<a href='https://www.linkedin.com/in/christinah-chokwe-a4456554' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/christinah426' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
         # Floyd
         st.markdown("<h3 style='text-align: center;'>Floyd Skakane</h3>", unsafe_allow_html=True)
@@ -298,23 +298,23 @@ def main():
         # Gudani
         st.markdown("<h3 style='text-align: center;'>Gudani Mbedzi</h3>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>Modelling | Data Scientist</p>", unsafe_allow_html=True)
-        st.image('resources/imgs/nelly.jpg', width=120)
-        st.markdown("<a href='https://www.linkedin.com/in/nelisiwe-mabanga-8bb409106/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-        st.markdown("<a href='https://github.com/Phiwe-Mabanga' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        st.image('resources/imgs/Gudani.jpeg', width=120)
+        st.markdown("<a href='https://www.linkedin.com/in/mbedzigudani' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/gudanisally' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
         # Kwenadi
         st.markdown("<h3 style='text-align: center;'>Kwenadi Letsoalo</h3>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>Streamlit App Designer | Data Scientist</p>", unsafe_allow_html=True)
-        st.image('resources/imgs/Thando.jpg', width=120)
-        st.markdown("<a href='https://www.linkedin.com/in/noluthando-khumalo-3870ab191/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-        st.markdown("<a href='https://github.com/ThandoKhumalo' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        st.image('resources/imgs/Kwenadi.jpeg', width=120)
+        st.markdown("<a href='https://www.linkedin.com/in/kwenadi-l-821510215' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
         # Nhlanhla
         st.markdown("<h3 style='text-align: center;'>Nhlanhla Hlewane</h3>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>Feature Engineering | Data Engineer</p>", unsafe_allow_html=True)
         st.image('resources/imgs/Nompilo.jpg', width=120)
-        st.markdown("<a href='http://www.linkedin.com/in/nompilo-nhlabathi-2701791b2' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
-        st.markdown("<a href='https://github.com/mapilos' target='_blank'>GitHub</a>", unsafe_allow_html=True)
+        st.markdown("<a href='http://www.linkedin.com/in/' target='_blank'>LinkedIn</a>", unsafe_allow_html=True)
+        st.markdown("<a href='https://github.com/' target='_blank'>GitHub</a>", unsafe_allow_html=True)
 
 
     # You may want to add more sections here for aspects such as an EDA,
